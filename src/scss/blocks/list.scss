@@ -1,0 +1,187 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @include breakpoint($mobile-sm) {
+        padding: 0 20px;
+    }
+}
+.list-item {
+    width: 100%;
+    max-width: 489px;
+    height: 238px;
+    display: flex;
+    background-color: $secondary-bg;
+    border: 1px solid $clear-bg;
+    &:nth-child(odd) {
+        margin-right: 23px;
+        margin-bottom: 23px;
+    }
+    @include breakpoint($desktop-sm) {
+        &:nth-child(odd) {
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        margin-bottom: 20px;
+    }
+    @include breakpoint($mobile-sm) {
+        height: auto;
+    }
+}
+.list-item__select {
+    width: 100%;
+    max-width: 41px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include breakpoint($mobile-min) {
+        padding-top: 21px;
+        max-width: 25px;
+        align-items: start;
+    }
+}
+
+.list-item__content {
+    padding: 21px 0 25px 25px;
+    width: 100%;
+    max-width: 448px;
+}
+.list-item__top {
+    display: flex;
+    justify-content: space-between;
+    &-info {
+        display: flex;
+        align-items: center;
+        @include breakpoint($mobile-sm) {
+            flex-wrap: wrap;
+            max-width: 150px;
+        }
+        @include breakpoint($mobile-min) {
+            margin-top: 10px;
+            margin-right: 10px;
+            width: 100%;
+            max-width: none;
+            justify-content: space-between;
+            order: 2;
+        }
+    }
+    @include breakpoint($mobile-min) {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+.list-item__price {
+    margin-right: 16px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: $price-color;
+    @include breakpoint($mobile-sm) {
+        margin-bottom: 10px;
+    }
+    @include breakpoint($mobile-min) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+.list-item__main {
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint($mobile-min) {
+        flex-wrap: wrap;
+    }
+    &-info {
+        width: 100%;
+        max-width:243px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include breakpoint($mobile-min) {
+            margin-top: 20px;
+            margin-right: 25px;
+            max-width: none;
+        }
+    }
+    &-additional {
+        margin-top: 27px;
+        margin-right: 25px;
+        width: 100%;
+        max-width: 133px;
+        @include breakpoint($mobile-min) {
+            margin-top: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: none;
+        }
+    }
+}
+
+.list-item__name {
+    margin-bottom: 14px;
+    height: 42px;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    & span {
+        font-family: $main-fc;
+    }
+}
+.color-helper {
+    color: $secondary-fc;
+}
+.list-item__flat-info {
+    display: flex;
+}
+.list-item__flat-col {
+    display: block;
+    &--helper {
+        margin-right: 20px;
+        padding-right: 20px;
+        border-right: 1px solid $border-bg;
+    }
+}
+.list-item__flat-txt {
+    display: block;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $main-fc;
+}
+.list-item__location {
+    position: relative;
+    &-marker {
+        position: absolute;
+        left: -19px;
+        top: 3px;
+    }
+}
+.list-item__adress {
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $main-fc;
+}
+.list-item__img {
+    margin-bottom: 12px;
+    display: block;
+    width: 100%;
+    max-width: 133px;
+    height: auto;
+    @include breakpoint($mobile-min) {
+        margin-bottom: 0;
+    }
+}
+.added {
+    display: inline-block;
+    font-family: "PT Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $additioanl-fc;
+}

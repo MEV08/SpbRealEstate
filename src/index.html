@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPb Real Estate</title>
+</head>
+<body>
+<section class="main">
+    <div class="container">
+        <div class="main-content">
+            <div class="action">
+                <div class="action-options">
+                    <div class="search-bar">
+                        <img class="search-bar__img" src="img/search.svg" alt="search">
+                        <input class="search-bar__input" type="text" placeholder="Введите ЖК / корпус / № квартиры / № паркинга">
+                    </div>
+                    <div class="dropdown" id="dropdown">
+                        <div class="dropdown-label" id="dropdownLabel">
+                            Все статусы
+                            <img class="dropdown-label__img" src="img/arrow-up.svg" alt="arrow">
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-menu__item">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox-input" id="reserved">
+                                    <label for="reserved" class="checkbox-label checkbox-label--inactive">
+                                        Забронировано
+                                    </label>                          
+                                </div>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox-input" id="sold">
+                                    <label for="sold" class="checkbox-label checkbox-label--inactive">
+                                        Продано
+                                    </label>                          
+                                </div>
+                            </li>
+                            <li class="dropdown-menu__item">
+                                <div class="checkbox">
+                                    <input type="checkbox" class="checkbox-input" id="active">
+                                    <label for="active" class="checkbox-label checkbox-label--inactive">
+                                        Активно
+                                    </label>                          
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                   
+                    <button class="clear" type="submit">
+                        Очистить корзину
+                        <img class="clear-cross" src="img/close.svg" alt="clear">
+                    </button>
+                </div>
+                <div class="action-effects">
+                    <div class="action-effects__all">
+                        <div class="checkbox">
+                            <input type="checkbox" class="checkbox-input" id="checkboxAll">
+                            <label for="checkboxAll" class="checkbox-label">
+                                все
+                            </label>                           
+                        </div>
+                    </div>
+
+                        <button class="btn btn--save" type="submit">
+                            Сохранить
+                            <img class="btn-img" src="img/save.svg" alt="save">
+                        </button>
+                        <button class="btn btn--send" type="submit">
+                            Отправить
+                            <img class="btn-img" src="img/send.svg" alt="send">
+                        </button>
+                        <button class="btn btn--delete" type="submit">
+                            Удалить
+                            <img class="btn-img" src="img/bin.svg" alt="delete">
+                        </button>
+                </div>
+            </div>
+            <div class="list">
+                <div class="list-item">
+                    <div class="list-item__select">
+                        <div class="checkbox checkbox--helper">
+                            <input type="checkbox" class="checkbox-input" id="id1">
+                            <label for="id1" class="checkbox-label">
+                            </label>                           
+                        </div>
+                    </div>
+                    <div class="list-item__content">
+                        <div class="list-item__top">
+                            <div class="list-item__top-info">
+                                <h2 class="list-item__price">
+                                    7 733 300 руб.
+                                </h2>
+                                <div class="plate">
+                                    <img class="plate-img" src="img/flat-icon.svg" alt="plate-img">
+                                    Квартира                           
+                                </div>
+                            </div>
+                            <div class="status status--legal">
+                                Уступка от юр. лица
+                            </div>
+                        </div>
+                        <div class="list-item__main">
+                            <div class="list-item__main-info">
+                                <div class="list-item__main-group">
+                                    <div class="list-item__name">
+                                        <span>Чистое Небо, </span>
+                                        <span class="color-helper">корпус 10, III кв. 2022 г.</span>
+                                    </div>
+                                    <div class="list-item__flat-info">
+                                        <div class="list-item__flat-col list-item__flat-col--helper">
+                                            <span class="list-item__flat-txt">кв. 62</span>
+                                            <span class="list-item__flat-txt">1 комн. кв.</span>
+                                        </div>
+                                        <div class="list-item__flat-col">
+                                            <span class="list-item__flat-txt">234.38 м²</span>
+                                            <span class="list-item__flat-txt">7 этаж</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="list-item__location">
+                                    <img class="list-item__location-marker" src="img/marker.svg" alt="marker">
+                                    <p class="list-item__adress">
+                                        Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list-item__main-additional">
+                                <img class="list-item__img" src="img/apartment.png" alt="flat">                      
+                                <span class="added">Добавлено 21/11/2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__select">
+                        <div class="checkbox checkbox--helper">
+                            <input type="checkbox" class="checkbox-input" id="id2">
+                            <label for="id2" class="checkbox-label">
+                            </label>                           
+                        </div>
+                    </div>
+                    <div class="list-item__content">
+                        <div class="list-item__top">
+                            <div class="list-item__top-info">
+                                <h2 class="list-item__price">
+                                    7 733 300 руб.
+                                </h2>
+                            </div>
+                            <div class="status status--individual">
+                                Уступка от физ. лица
+                            </div>
+                        </div>
+                        <div class="list-item__main">
+                            <div class="list-item__main-info">
+                                <div class="list-item__main-group">
+                                    <div class="list-item__name">
+                                        <span>Зеленый квартал на Пулковских
+                                            высотах, </span>
+                                        <span class="color-helper">корпус 10, III кв. 2022 г.</span>
+                                    </div>
+                                    <div class="list-item__flat-info">
+                                        <div class="list-item__flat-col list-item__flat-col--helper">
+                                            <span class="list-item__flat-txt">кв. 62</span>
+                                            <span class="list-item__flat-txt">1 комн. кв.</span>
+                                        </div>
+                                        <div class="list-item__flat-col">
+                                            <span class="list-item__flat-txt">234.38 м²</span>
+                                            <span class="list-item__flat-txt">7 этаж</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="list-item__location">
+                                    <img class="list-item__location-marker" src="img/marker.svg" alt="marker">
+                                    <p class="list-item__adress">
+                                        Комендантский пр., уч. 1 Каменка
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list-item__main-additional">
+                                <img class="list-item__img" src="img/apartment.png" alt="flat">                      
+                                <span class="added">Добавлено 21/11/2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__select">
+                        <div class="checkbox checkbox--helper">
+                            <input type="checkbox" class="checkbox-input" id="id3">
+                            <label for="id3" class="checkbox-label">
+                            </label>                           
+                        </div>
+                    </div>
+                    <div class="list-item__content">
+                        <div class="list-item__top">
+                            <div class="list-item__top-info">
+                                <h2 class="list-item__price">
+                                    800 300 руб.
+                                </h2>
+                                <div class="plate">
+                                    <img class="plate-img" src="img/car-icon.svg" alt="plate-img">
+                                    Паркинг  
+                                    <div class="plate-info" id="plate-info2">
+                                        Подземная встроенно-пристроенная
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="status status--reserved">
+                                Забронировано
+                            </div>
+                        </div>
+                        <div class="list-item__main">
+                            <div class="list-item__main-info">
+                                <div class="list-item__main-group">
+                                    <div class="list-item__name">
+                                        <span>Зеленый квартал на Пулковских
+                                            высотах, </span>
+                                        <span class="color-helper">корпус 10, III кв. 2022 г.</span>
+                                    </div>
+                                    <div class="list-item__flat-info">
+                                        <div class="list-item__flat-col list-item__flat-col--helper">
+                                            <span class="list-item__flat-txt">№ 7-10-2 (ПИБ №68)</span>
+                                        </div>
+                                        <div class="list-item__flat-col">
+                                            <span class="list-item__flat-txt">15 м²</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="list-item__location">
+                                    <img class="list-item__location-marker" src="img/marker.svg" alt="marker">
+                                    <p class="list-item__adress">
+                                        Ленинградская область, Всеволожский район, д. Кудрово, ул. Столичная, д.&nbsp;5,&nbsp;к.&nbsp;1
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list-item__main-additional">
+                                <img class="list-item__img" src="img/apartment.png" alt="flat">                      
+                                <span class="added">Добавлено 21/11/2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="list-item__select">
+                        <div class="checkbox checkbox--helper">
+                            <input type="checkbox" class="checkbox-input" id="id4">
+                            <label for="id4" class="checkbox-label">
+                            </label>                           
+                        </div>
+                    </div>
+                    <div class="list-item__content">
+                        <div class="list-item__top">
+                            <div class="list-item__top-info">
+                                <h2 class="list-item__price">
+                                    800 300 руб.
+                                </h2>
+                                <div class="plate" id="plate">
+                                    <img class="plate-img" src="img/car-icon.svg" alt="plate-img">
+                                    Паркинг 
+                                    <div class="plate-info" id="plate-info">
+                                        Подземная встроенно-пристроенная
+                                    </div>                        
+                                </div>
+                                
+                            </div>
+                            <div class="status status--sold">
+                                Продано
+                            </div>
+                        </div>
+                        <div class="list-item__main">
+                            <div class="list-item__main-info">
+                                <div class="list-item__main-group">
+                                    <div class="list-item__name">
+                                        <span>Зеленый квартал на Пулковских
+                                            высотах, </span>
+                                        <span class="color-helper">корпус 10, III кв. 2022 г.</span>
+                                    </div>
+                                    <div class="list-item__flat-info">
+                                        <div class="list-item__flat-col list-item__flat-col--helper">
+                                            <span class="list-item__flat-txt">№ 7-10-2 (ПИБ №68)</span>
+                                        </div>
+                                        <div class="list-item__flat-col">
+                                            <span class="list-item__flat-txt">15 м²</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="list-item__location">
+                                    <img class="list-item__location-marker" src="img/marker.svg" alt="marker">
+                                    <p class="list-item__adress">
+                                        Лен. область, Всеволожский район, д. Кудрово, ул. Столичная, д. 5, к. 1
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="list-item__main-additional">
+                                <img class="list-item__img" src="img/apartment.png" alt="flat">                      
+                                <span class="added">Добавлено 21/11/2020</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>

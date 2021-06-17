@@ -1,0 +1,225 @@
+.action {
+    margin-left: 99px;
+    margin-right: 100px;
+    @include breakpoint($tablet) {
+        margin: 0;
+    }
+}
+.action-options {
+    width: 100%;
+    max-width: 1001px;
+    display: flex;
+    @include breakpoint($tablet) {
+        padding: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.search-bar {
+    width: 64%;
+    max-width: 637px;
+    display: flex;
+    border: 1px solid $border-bg;
+    &__input {
+        font-family: "PT Sans";
+        padding: 10px 0 8px;
+        width: 100%;
+        max-width: 460px;
+        font-size: 14px;
+        line-height: 18px;
+        color: $additioanl-fc;
+        border: none;
+        background-color: transparent;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        &::placeholder {
+            color: $additioanl-fc;
+        }
+    }
+    &__img {
+        margin: 6px 15px 6px 6px;
+    }
+    @include breakpoint($tablet) {
+        width: 100%;
+        max-width: 620px;
+        margin-bottom: 20px;
+    }
+}
+.dropdown {
+    width: 100%;
+    max-width: 190px;
+    margin: 0 10px;
+    position: relative;
+    .open &-menu {
+        display: block;
+    }
+    .open &-label__img {
+        transform: rotate(0);
+    }
+    @include breakpoint($tablet) {
+        margin: 0 20px 0 0;
+        width: 60%;
+        max-width: 400px;
+    }
+    @include breakpoint($mobile) {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        min-width: 190px;
+        max-width: none;
+    }
+}
+.dropdown-label {
+    width: 100%;
+    height: 38px;
+    border: 1px solid $border-bg;
+    padding: 10px 10px 9px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $main-fc;
+    transition: transform .2s linear;
+    cursor: pointer;
+    &__img {
+        transform: rotate(180deg);
+        width: 16px;
+        height: 15px;
+    } 
+}
+.dropdown-menu {
+    position: absolute;
+    background-color: $secondary-bg;
+    max-height: 124px;
+    width: 100%;
+    max-width: 190px;
+    left: 0;
+    right: 0;
+    top: 44px;
+    z-index: 100;
+    display: none;
+    &__item-txt {
+        padding-left: 15px;
+        color: $price-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        transition: color .2s linear;
+    }
+    &__item-txt.selected {
+        color: $additional-bc;
+    }
+    @include breakpoint($tablet) {
+        max-width: none;
+    }
+
+}
+.dropdown-menu__item {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: flex-end;
+    &:nth-child(1) {
+        padding-top: 18px;
+    }
+    &:nth-child(2) {
+        padding-top: 14px;
+    }
+    &:nth-child(3) {
+        padding-top: 15px;
+        padding-bottom: 21px;
+    }
+}
+.clear {
+    padding: 7px 10px 7px 13px;
+    width: 100%;
+    max-width: 154px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $clear-bg;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $main-fc;
+    @include breakpoint($tablet) {
+        width: 40%;
+        max-width: 200px;
+    }
+    @include breakpoint($mobile) {
+        width: 100%;
+        max-width: none;
+        min-width: 190px;
+    }
+}
+.action-effects {
+    padding: 32px 25px 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    z-index: 50;
+    &__all {
+        margin-right: 3px;
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+        font-size: 13px;
+        line-height: 20px;
+        color: $main-fc;
+        span {
+            margin-left: 10px;
+        }
+        @include breakpoint($mobile-min) {
+            width: 30%;
+            justify-content: center;
+        }
+    }
+    @include breakpoint($tablet) {
+        justify-content: center;
+    }
+    @include breakpoint($mobile-sm) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    @include breakpoint($mobile-min) {
+        justify-content: space-between;
+    }
+}
+.btn {
+    margin-left: 10px;
+    padding: 7px 13px;
+    display: flex;
+    align-items: center;
+    background-color: $clear-bg;
+    border: none;
+    font-family: inherit;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $main-fc;
+    &-img {
+        margin-left: 4px;
+    }
+    @include breakpoint($mobile-min) {
+        margin-left: 0;
+        justify-content: center;
+        &--save {
+            width: 49%;
+        }
+        &--send {
+            margin-top: 15px;
+            width: 49%;
+        }
+        &--delete {
+            margin-top: 15px;
+            width: 49%;
+        }
+    }
+}
+
+

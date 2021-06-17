@@ -1,0 +1,42 @@
+@import "vars";
+@import "mixins";
+@import "reset";
+@import "fonts";
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: $secondary-bg;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+}
+.main {
+  height: 100%;
+}
+.container { 
+  padding: 0 20px;
+  margin: 0 auto;    
+  width: 100%;
+  max-width: 1240px;
+  @include breakpoint($mobile-sm) {
+    padding: 0;
+  }
+}
+.main-content {
+  padding: 89px 0 84px;
+  background-color: $main-bg;  
+  @include breakpoint($mobile-min) {
+    padding: 40px 0 40px;
+  }
+}
+/* blocks */ 
+@import "blocks/components";
+@import "blocks/action";
+@import "blocks/list";
